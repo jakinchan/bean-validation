@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:jsfc="http://xmlns.jcp.org/jsf">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JSF &amp; Bean Validation</title>
+  </head>
+  <body>
+    <h:messages />
+    
+    <form jsfc:id="form">
+      <input type="text" jsfc:value="#{jsfIntegrationBean.value}" />
+      <input type="submit" jsfc:action="#{jsfIntegrationBean.method()}" value="Submit" />
+    </form>
+  </body>
+</html>
